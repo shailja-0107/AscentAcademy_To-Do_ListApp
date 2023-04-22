@@ -25,7 +25,7 @@ header,form{
 form input, form button{
     padding: 0.5rem;
     padding-left: 1rem;
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     border: none;
     background: white;
     border-radius: 2rem;
@@ -122,7 +122,7 @@ select {
 }
 
 .select{
-    margin: 1rem;
+    margin: 0.6rem;
     position: relative;
     overflow: hidden;
     border-radius: 50px;
@@ -148,7 +148,7 @@ select{
     transition: all 0.3s ease;
 }
 
-.sleect:hover::after{
+.select:hover::after{
     background: white;
     color: rgb(255, 166, 0);
 }
