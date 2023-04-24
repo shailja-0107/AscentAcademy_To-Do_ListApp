@@ -45,7 +45,7 @@ form input, form button{
 }
 
 form input{
-    width: 30%;
+    width: 40%;
 }
 
 form button{
@@ -147,8 +147,8 @@ select {
 
 select{
     color:rgb(123, 0, 255);
-    width: 10rem;
-    height: 3.2rem;
+    width: 9rem;
+    height: 3rem;
     cursor: pointer;
     padding: 1rem;
     font-size: 1rem;
