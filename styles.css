@@ -4,15 +4,25 @@
     box-sizing: border-box;
 }
 
+
+
 body{
-    background-color: blueviolet;
-    color: white;
+    background-image: -webkit-linear-gradient(70deg, rgb(230, 120, 230) 30%, rgb(253, 238, 255) 80%);
+    color: black;
     font-family: "Ubuntu";
     min-height: 100vh;
 }
 
 header{
     font-size: 1.5rem;
+}
+
+header,form{
+    min-height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
 }
 
 @media screen and (max-width:400px){
@@ -28,13 +38,6 @@ header{
     
 }
 
-header,form{
-    min-height: 20vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 form input, form button{
     padding: 0.5rem;
     padding-left: 1rem;
@@ -43,13 +46,13 @@ form input, form button{
     background: white;
     border-radius: 2rem;
 }
-
+ 
 form input{
     width: 40%;
 }
 
 form button{
-    color: rgb(255, 166, 0);
+    color: rgb(152, 9, 152);
     background: white;
     cursor: pointer;
     transition: all 0.3 ease;
@@ -58,13 +61,14 @@ form button{
 
 form button:hover{
     color: white;
-    background: rgb(255, 166, 0);
+    background: rgb(152, 9, 152);
 }
 
 .fa-circle-plus{
     margin-top: 2px;
     margin-left: -8px;
     margin-right: 1.2px;
+    
     font-size: 1.8rem;
 }
 
@@ -83,7 +87,7 @@ form button:hover{
     margin: 0.5rem;
     padding-left: 0.5rem;
     background: white;
-    color: black;
+    color:  rgb(152, 9, 152);
     font-size: 1.5rem;
     display: flex;
     justify-content: space-between;
@@ -105,13 +109,13 @@ form button:hover{
 }
 
 .complete-btn{
-    background:rgb(255, 166, 0);
+    background: rgb(152, 9, 152);
 }
 
 .trash-btn{
     border-top-right-radius: 1.75rem;
     border-bottom-right-radius: 1.75rem;
-    background: rgb(181, 176, 176);
+    background: rgb(159, 125, 146);
 }
 
 .todo-item{
@@ -141,31 +145,36 @@ select {
 .select{
     margin: 0.6rem;
     position: relative;
+    display: flex;
     overflow: hidden;
     border-radius: 50px;
 }
 
 select{
-    color:rgb(123, 0, 255);
+    color: rgb(152, 9, 152);
     width: 9rem;
     height: 3rem;
     cursor: pointer;
     padding: 1rem;
     font-size: 1rem;
+    margin: 0;
 }
 
 .select::after{
     content: "\25BC";
+    margin: 0;
     position: absolute;
-    background: rgb(255, 166, 0);
+    background:  rgb(152, 9, 152);
     top: 0;
     right: 0;
     padding: 1rem;
     pointer-events:none ;
     transition: all 0.3s ease;
+    border-radius: 0 30px 30px  0;
 }
 
 .select:hover::after{
-    background: white;
-    color: rgb(255, 166, 0);
+    /* background: rgb(38, 1, 39); */
+    color:  rgb(243, 234, 234);
 }
+
