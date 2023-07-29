@@ -8,7 +8,7 @@
 
 body{
     background-image: -webkit-linear-gradient(70deg, rgb(230, 120, 230) 30%, rgb(253, 238, 255) 80%);
-    color: black;
+    color: rgb(152, 9, 152);
     font-family: "Ubuntu";
     min-height: 100vh;
 }
